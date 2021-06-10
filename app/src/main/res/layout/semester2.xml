@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorblue">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장하기"
+            android:layout_toRightOf="@id/fri1"
+            android:background="@color/colorpink"
+            android:id="@+id/save"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="삭제하기"
+            android:id="@+id/delete"
+            android:layout_below="@id/save"
+            android:layout_toRightOf="@id/fri1"
+            android:background="@color/colorpink"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:text=" 시간  "
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mon"
+            android:text=" 월요일 "
+            android:layout_toRightOf="@id/time"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tues"
+            android:text=" 화요일 "
+            android:layout_toRightOf="@id/mon"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wednes"
+            android:text=" 수요일 "
+            android:layout_toRightOf="@id/tues"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thurs"
+            android:text=" 목요일 "
+            android:layout_toRightOf="@id/wednes"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fri"
+            android:text=" 금요일 "
+            android:layout_toRightOf="@id/thurs"
+            android:textSize="20dp"
+            />
+        // 몇 교시 세로축
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:00"
+            android:id="@+id/time01"
+            android:layout_below="@id/time"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:id="@+id/time02"
+            android:layout_below="@id/time01"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00"
+            android:id="@+id/time03"
+            android:layout_below="@id/time02"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00"
+            android:id="@+id/time04"
+            android:layout_below="@id/time03"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13:00"
+            android:id="@+id/time05"
+            android:layout_below="@id/time04"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:00"
+            android:id="@+id/time06"
+            android:layout_below="@id/time05"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15:00"
+            android:id="@+id/time07"
+            android:layout_below="@id/time06"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16:00"
+            android:id="@+id/time08"
+            android:layout_below="@id/time07"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:00"
+            android:id="@+id/time09"
+            android:layout_below="@id/time08"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:00"
+            android:id="@+id/time10"
+            android:layout_below="@id/time09"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        // 1교시 버튼 시간표
+
+        <Button
+            android:id="@+id/mon1"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time01"
+            android:hint="mon1"
+
+
+            />
+
+        <Button
+            android:id="@+id/tues1"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon1"
+            android:hint="tues1" />
+
+        <Button
+            android:id="@+id/wed1"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wednes"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues1"
+            android:hint="wed1" />
+
+        <Button
+            android:id="@+id/thu1"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/wednes"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed1"
+            android:hint="thu1" />
+
+        <Button
+            android:id="@+id/fri1"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu1"
+            android:hint="fir1" />
+
+        //2 교시 버튼 시간표
+
+        <Button
+            android:id="@+id/mon2"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time02"
+            android:textColor="@color/selector_text"
+            android:hint="mon2" />
+
+        <Button
+            android:id="@+id/tues2"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues1"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon2"
+            android:hint="tues2" />
+
+        <Button
+            android:id="@+id/wed2"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues2"
+            android:hint="wed2" />
+
+        <Button
+            android:id="@+id/thu2"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thu1"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed2"
+            android:hint="tues2" />
+        <Button
+            android:id="@+id/fri2"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu2"
+            android:hint="fri2" />
+
+        //월 수 금 3교시
+        <Button
+            android:id="@+id/mon3"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time03"
+            android:hint="mon3" />
+
+        <Button
+            android:id="@+id/wed3"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues2"
+            android:hint="wed3" />
+        <Button
+            android:id="@+id/fri3"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu2"
+            android:hint="fri3" />
+
+        // 12시 이후 시간표
+
+
+        <Button
+            android:id="@+id/mon4"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon3"
+            android:layout_marginLeft="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time04"
+            android:hint="mon4" />
+
+        <Button
+            android:id="@+id/tues3"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues2"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon4"
+            android:hint="tues3" />
+
+        <Button
+            android:id="@+id/wed4"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed3"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues2"
+            android:hint="wed4" />
+
+        <Button
+            android:id="@+id/thu3"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thu2"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed4"
+            android:hint="thu3" />
+
+
+        <Button
+            android:id="@+id/fri4"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri3"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu3"
+            android:hint="fir4" />
+
+        //  4 5교시 버튼
+
+        <Button
+            android:id="@+id/mon5"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon4"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time05"
+            android:hint="mon5" />
+
+        <Button
+            android:id="@+id/tues4"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues3"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon5"
+            android:hint="tues4" />
+
+        <Button
+            android:id="@+id/wed5"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed4"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues4"
+            android:hint="wed5" />
+
+        <Button
+            android:id="@+id/thu4"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thu3"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed5"
+            android:hint="tues4" />
+        <Button
+            android:id="@+id/fri5"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri4"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu4"
+            android:hint="fri5" />
+
+        //월 수 금 6교시
+        <Button
+            android:id="@+id/mon6"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon5"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time06"
+            android:hint="mon6" />
+
+        <Button
+            android:id="@+id/wed6"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed5"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues4"
+            android:hint="wed6" />
+        <Button
+            android:id="@+id/fri6"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri5"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu4"
+            android:hint="fri6" />
+
+        //15시 이후 시간표
+
+
+        <Button
+            android:id="@+id/mon7"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon6"
+            android:layout_marginLeft="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time07"
+            android:hint="mon7" />
+
+        <Button
+            android:id="@+id/tues5"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues4"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon7"
+            android:hint="tues5" />
+
+        <Button
+            android:id="@+id/wed7"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed6"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues4"
+            android:hint="wed7" />
+
+        <Button
+            android:id="@+id/thu5"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thu4"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed7"
+            android:hint="thu5" />
+
+        <Button
+            android:id="@+id/fri7"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri6"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu5"
+            android:hint="fir7" />
+
+        //  8 6교시 버튼
+
+        <Button
+            android:id="@+id/mon8"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon7"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time08"
+            android:hint="mon8" />
+
+        <Button
+            android:id="@+id/tues6"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues5"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon8"
+            android:hint="tues6" />
+
+        <Button
+            android:id="@+id/wed8"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed7"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues6"
+            android:hint="wed8" />
+
+        <Button
+            android:id="@+id/thu6"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thu5"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed8"
+            android:hint="tues6" />
+        <Button
+            android:id="@+id/fri8"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri7"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu6"
+            android:hint="fri8" />
+
+        //월 수 금 9교시
+        <Button
+            android:id="@+id/mon9"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon8"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time09"
+            android:hint="mon9" />
+
+        <Button
+            android:id="@+id/wed9"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed8"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues6"
+            android:hint="wed9" />
+        <Button
+            android:id="@+id/fri9"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri8"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu6"
+            android:hint="fri9" />
+
+        //18시 이후
+
+
+        <Button
+            android:id="@+id/mon10"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/mon9"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/time10"
+            android:hint="mon10" />
+
+        <Button
+            android:id="@+id/tues7"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tues6"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/mon10"
+            android:hint="tues7" />
+
+        <Button
+            android:id="@+id/wed10"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/wed9"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/tues7"
+            android:hint="wed10" />
+
+        <Button
+            android:id="@+id/thu7"
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/thu6"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/wed10"
+            android:hint="tues7" />
+        <Button
+            android:id="@+id/fri10"
+            android:layout_width="65dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/fri9"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" android:layout_toRightOf="@+id/thu7"
+            android:hint="fri10" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

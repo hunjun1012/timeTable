@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"
+        android:color="#ff0000"/>
+    <item android:state_pressed="true"
+        android:color="#FF5E00"/>
+    <item android:state_pressed="true"
+        android:color="#FFE400"/>
+    <item android:state_pressed="true"
+        android:color="#ABF200"/>
+    <item android:state_pressed="true"
+        android:color="#1DDB16"/>
+    <item android:state_pressed="true"
+        android:color="#00D8FF"/>
+    <item android:state_pressed="true"
+        android:color="#0054FF"/>
+    <item android:state_pressed="true"
+        android:color="#FF007F"/>
+
+
+</selector>
